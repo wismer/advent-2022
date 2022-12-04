@@ -2,6 +2,7 @@ use std::{env::args, fs::{read_to_string}};
 
 mod day1;
 mod day2;
+mod day3;
 fn main() {
     let mut args = args();
     args.next();
@@ -12,6 +13,8 @@ fn main() {
         "1.1" => day1::solve_part_two(file),
         "2.0" => day2::solve_part_one(file),
         "2.1" => day2::solve_part_two(file),
+        "3.0" => day3::solve_part_one(file),
+        "3.1" => day3::solve_part_two(file),
         _ => unimplemented!()
     };
 }

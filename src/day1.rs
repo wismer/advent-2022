@@ -1,6 +1,6 @@
 pub fn solve_part_one(input: String) -> i32 {
     let mut max = 0;
-    let mut lines = input.lines();
+    let lines = input.lines();
     let mut subtotal = 0;
     for line in lines {
         println!("{}", line);
@@ -41,8 +41,7 @@ fn test_solve_part_one() {
 }
 
 pub fn solve_part_two(input: String) -> i32 {
-    let mut max = 0;
-    let mut lines = input.lines();
+    let lines = input.lines();
     let mut subtotal = 0;
     let mut top_three = (0, 0, 0);
 

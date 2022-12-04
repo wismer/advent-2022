@@ -81,7 +81,7 @@ pub fn solve_part_one(input: String) -> i32 {
         let opponent_pick = entries.nth(0).unwrap();
         let player_pick = entries.nth(1).unwrap();
         let opponent = PlayerPick::new(opponent_pick);
-        let mut player = PlayerPick::new(player_pick);
+        let player = PlayerPick::new(player_pick);
 
         let subtotal = if opponent > player {
             player.val
