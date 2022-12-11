@@ -6,6 +6,7 @@ mod day3;
 mod day4;
 mod day5;
 mod day6;
+mod day7;
 fn main() {
     let mut args = args();
     args.next();
@@ -24,6 +25,8 @@ fn main() {
         "5.1" => println!("result: {}", day5::solve_part_two(file)),
         "6.0" => println!("result: {}", day6::solve_part_one(file)),
         "6.1" => println!("result: {}", day6::solve_part_two(file)),
+        "7.0" => println!("result: {}", day7::solve_part_two(file)),
+        "7.1" => println!("result: {}", day7::solve_part_two(file)),
         _ => unimplemented!()
     };
 }
